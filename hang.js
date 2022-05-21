@@ -3,7 +3,7 @@ const words = [["moth", "almost same as a butterfly"], ['duck', 'quack quack'], 
 ["leopard", "from the cat family"], ["hyena", "member of the dog family"], ["rabbit", "cute mammal"],
 ["chameleon", "camouflage animal"], ["kitten", "baby of the cat family"], ["phoenix", "mythical creature"],
 ["squirrel", "furry tail"], ['tortoise', "pretty slow"], ["warthog", "pumba"], ["chimpanzee", "monkey family"],
-["panther", "black cat"], ["chipmunk", "alvin"], ["patrigde", "christmas song"], ["horse", "rider"], ["dragon", "fire"],
+["panther", "black cat"], ["chipmunk", "alvin"], ["patridge", "christmas song"], ["horse", "rider"], ["dragon", "fire"],
 ["ladybug", "superhero fly"], ["bat", "blind"], ["cricket", "evening noisemaker"], ["skunk", "bad fart"]];
 
 
