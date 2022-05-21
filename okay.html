@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background: grey;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .box:hover{
+            background: red;
+            border-radius: 50%;
+            transform: rotateX(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <button class="btn btn-primary btn-sm">Button</button>
+    <canvas id="canvas" height= '300' width ='300'></canvas>
+    <script defer>
+        function draw() {
+            var canvas = document.getElementById('canvas');
+            if(canvas.getContext) {
+            var ctx = canvas.getContext('2d');
+
+            ctx.beginPath();
+            ctx.moveTo(0, 0);
+            ctx.lineTo(75, 0);
+            ctx.lineTo(75, 35);
+            ctx.moveTo(0,0);
+            ctx.lineTo(0, 270);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(110, 75);
+            ctx.arc(75, 75 ,30, 0, Math.PI * 2, false); 
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(75, 105);
+            ctx.lineTo(75, 270);
+            ctx.moveTo(75,150);
+            ctx.lineTo(30,90);
+            ctx.moveTo(75,150);
+            ctx.lineTo(120 ,90);
+            ctx.moveTo(75,200);
+            ctx.lineTo(30,260);
+            ctx.moveTo(75,200);
+            ctx.lineTo(120 ,260);
+            ctx.stroke();
+
+            
+            } else {
+                console.log('ouch');
+            }
+        }
+        draw();
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    float: right;
+    margin: 15px;
+    font-size: 1rem;
+    position : relative; 
+    color: red;
+    font-weight: bold;
+    margin-right : 150px;
+
+}
+h2{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#hangman{
+    width: 1500px;
+    margin: 10px;
+    text-align: center;
+    
+}
+#clue{
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#canvas{
+    margin: 10px;
+    
+}
+#input{
+    color: black;
+    text-align: center;
+}
+
+
+button{
+    padding: 5px;
+    margin: 5px;
+    border: 3px solid white;
+    width: 50px;
+    height: 50px;
+    background: rgb(255, 166, 0);
+}
+
+button:hover{
+    background: rgb(255, 126, 15);
+}
+
+#reset{
+    width:100px;
+    position: absolute;
+    left: 46%;
+    margin-top: 90px;
+}
+#status{
+    text-align : center;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.win{
+    color:green;
+}
+.lose{
+    color: red;
+}
+
+
+#buttons{
+    padding-bottom: 10px;
+    padding-left: 5px;
+    align-content: center;
+    vertical-align: middle;
+    position: absolute;
+    left : 25%;
+    top: 500px;
+    width: 660px;
+    display: grid;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+}
